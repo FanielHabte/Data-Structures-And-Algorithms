@@ -1,11 +1,10 @@
-nums = [1, 1, 0, 1, 1, 1]
+arr = [2, 4, 5, 3, 1, 2]
 
-count = 0
-position = 0
-for i in range(0, len(nums)):
-    if count == 0 and nums[i] == 1:
-        count+=1
-        position = i
-        
-print(count)
-print(position)
+maxValue = arr[-1]
+for i in range(len(arr)-2, -1, - 1):
+    print("Index Value:", i, "\nCurrent number:", arr[i], "\nMax Value:", maxValue,"\n")
+    maxValue = max(maxValue, arr[i + 1])
+    
+    
+arr[-1] = -1
+

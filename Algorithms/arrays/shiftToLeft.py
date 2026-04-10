@@ -5,7 +5,9 @@ Shift number one to the left
 
 """
 Algorithm Summary:
-1. Save the first value, iterate through n-1 and pull each element one slot left by copying from the right,
+1. Define a function that takes your list as input
+2. 
+Save the first value, iterate through n-1 and pull each element one slot left by copying from the right,
 then place the saved value at the end.
 """
 
